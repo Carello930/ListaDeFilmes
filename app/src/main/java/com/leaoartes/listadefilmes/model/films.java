@@ -1,5 +1,7 @@
 package com.leaoartes.listadefilmes.model;
 
+import java.util.List;
+
 public class films {
 
     private String movieTitle, movieGenre, movieYear;

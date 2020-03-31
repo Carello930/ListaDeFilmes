@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         this.createMovieFilms();
 
         //Configuração Adaptador
-        AdapterFilms adapterFilms = new AdapterFilms();
+        AdapterFilms adapterFilms = new AdapterFilms(movieList);
 
         //Configuração RecyclerView
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());

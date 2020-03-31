@@ -9,8 +9,17 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.leaoartes.listadefilmes.R;
+import com.leaoartes.listadefilmes.model.films;
+
+import java.util.List;
 
 public class AdapterFilms extends RecyclerView.Adapter<AdapterFilms.MyViewHolder> {
+
+    private List<films> movieListFilms;
+
+    public AdapterFilms(List<films> movieList) {
+        this.movieListFilms = movieList;
+    }
 
     @NonNull
     @Override
@@ -23,16 +32,17 @@ public class AdapterFilms extends RecyclerView.Adapter<AdapterFilms.MyViewHolder
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        holder.title.setText("Título de teste");
-        holder.category.setText("Comédia");
-        holder.year.setText("2021");
+        films films = movieListFilms.get(position);
+        holder.title.setText(films.getMovieTitle());
+        holder.category.setText(films.getMovieGenre());
+        holder.year.setText(films.getMovieYear());
 
     }
 
     @Override
     public int getItemCount()
     {
-        return 10;
+        return movieListFilms.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
