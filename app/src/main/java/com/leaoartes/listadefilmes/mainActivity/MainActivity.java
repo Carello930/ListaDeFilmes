@@ -1,10 +1,12 @@
 package com.leaoartes.listadefilmes.mainActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.LinearLayout;
 
 import com.leaoartes.listadefilmes.R;
 import com.leaoartes.listadefilmes.adapterFilms.AdapterFilms;
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerViewMain.setLayoutManager(layoutManager);
         recyclerViewMain.setHasFixedSize(true);
+        recyclerViewMain.addItemDecoration(new DividerItemDecoration(this, LinearLayout.VERTICAL));
         recyclerViewMain.setAdapter(adapterFilms);
 
     }
