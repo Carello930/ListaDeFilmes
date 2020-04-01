@@ -2,19 +2,23 @@ package com.leaoartes.listadefilmes.model;
 
 import java.util.List;
 
-public class films {
+public class MovieMain {
 
     //Variaveis para criação dos itens do layout
     private String movieTitle, movieGenre, movieYear;
+    private int movieImage;
 
-    public films(){
+
+    public MovieMain(){
 
     }
 
-    public films(String movieTitle, String movieGenre, String movieYear) {
+    public MovieMain(String movieTitle, String movieGenre, String movieYear, int MovieImage) {
         this.movieTitle = movieTitle;
         this.movieGenre = movieGenre;
         this.movieYear = movieYear;
+        this.movieImage = MovieImage;
+
     }
 
     public String getMovieTitle() {
@@ -39,5 +43,13 @@ public class films {
 
     public void setMovieYear(String movieYear) {
         this.movieYear = movieYear;
+    }
+
+    public int getMovieImage() {
+        return movieImage;
+    }
+
+    public void setMovieImage(int cardMovieImage) {
+        this.movieImage = cardMovieImage;
     }
 }

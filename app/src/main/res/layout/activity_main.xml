@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mainActivity.MainActivity">
+    tools:context=".activity.MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewMain"
+        android:id="@+id/recyclerViewCardMovie"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="20dp"
