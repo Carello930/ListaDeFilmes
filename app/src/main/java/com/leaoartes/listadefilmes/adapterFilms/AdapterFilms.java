@@ -32,6 +32,7 @@ public class AdapterFilms extends RecyclerView.Adapter<AdapterFilms.MyViewHolder
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
+        //
         films films = movieListFilms.get(position);
         holder.title.setText(films.getMovieTitle());
         holder.category.setText(films.getMovieGenre());

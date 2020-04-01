@@ -17,7 +17,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Variavel RecyclerView
     private RecyclerView recyclerViewMain;
+    //Criar um ArrayList
     private List<films> movieList = new ArrayList<>();
 
 
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerViewMain = findViewById(R.id.recyclerViewMain);
 
-        //Listagem de filmes
+        //Motodo para chamar a listagem dos filmes
         this.createMovieFilms();
 
         //Configuração Adaptador
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //Listagem dos filmes (Valores)
     public void createMovieFilms(){
 
         films films = new films("Homem-Aranha - De Volta ao lar", "Aventura", "2017");

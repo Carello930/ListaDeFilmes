@@ -4,6 +4,7 @@ import java.util.List;
 
 public class films {
 
+    //Variaveis para criação dos itens do layout
     private String movieTitle, movieGenre, movieYear;
 
     public films(){
